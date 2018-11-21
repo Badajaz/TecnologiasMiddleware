@@ -1,0 +1,21 @@
+
+}squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ËìÛßþÿÿÿÿHèRMAJORZ
+CODE_SMELL
+„squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ôà‹ôüÿÿÿÿ8ªÒíÈñ,HéRMAJORZ
+CODE_SMELL
+lsquid:S2095"DUse try-with-resources or close this "Socket" in a "finally" clause.(ÖÝÞåHîRBLOCKERZBUG
+q
+squid:S106"9Replace this use of System.out or System.err by a logger.(¬ªÐŠþÿÿÿÿ8ªÒíÈñ,HìRMAJORZ
+CODE_SMELL
+Gsquid:S1220""Move this file to a named package.HëRMINORZ
+CODE_SMELL
+„squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Æ²˜þÿÿÿÿ8ìÖÔµó,H—RMAJORZ
+CODE_SMELL
+[squid:S1481"'Remove this unused "in" local variable.(äÆ¾Ó8ìÖÔµó,H˜RMINORZ
+CODE_SMELL
+gsquid:S1481".Remove this unused "outStream" local variable.(›ýáÞûÿÿÿÿ8ìÖÔµó,H™RMINORZ
+CODE_SMELL
+vsquid:S1854"=Remove this useless assignment to local variable "outStream".(›ýáÞûÿÿÿÿ8ìÖÔµó,HšRMAJORZ
+CODE_SMELL
+jsquid:S1854"6Remove this useless assignment to local variable "in".(äÆ¾Ó8ìÖÔµó,H›RMAJORZ
+CODE_SMELL

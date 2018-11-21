@@ -13,21 +13,21 @@ public class PeerDois {
 	
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 		Scanner in = new Scanner(System.in);
-		while(true) {
-			Socket s = new Socket("localhost", 9090);
+		
+			Socket s = new Socket("localhost", 23232);
 			//BufferedReader input =new BufferedReader(new InputStreamReader(s.getInputStream()));
 			//String answer = input.readLine();
 			
 			ObjectOutputStream outStream = new ObjectOutputStream(s.getOutputStream());
 			ObjectInputStream inStream = new ObjectInputStream(s.getInputStream());
 			System.out.println(inStream.readObject());
-			System.out.println("INTRODUZA O NOME DO FICHEIRO");
-			String pesquisa = in.nextLine();
-			outStream.writeObject(pesquisa);
+			//System.out.println("INTRODUZA O NOME DO FICHEIRO");
+			//String pesquisa = in.nextLine();
+			//outStream.writeObject(pesquisa);
 			
 			
 			//s.setKeepAlive(true);
-		}
+		
 			
 		
 

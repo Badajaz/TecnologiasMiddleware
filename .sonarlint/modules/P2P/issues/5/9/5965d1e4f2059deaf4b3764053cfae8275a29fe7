@@ -1,5 +1,38 @@
 
-°squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Çµí‘HRCRITICALZ
+q
+squid:S106"9Replace this use of System.out or System.err by a logger.(öØáøÿÿÿÿ8—Ìµó,HıRMAJORZ
 CODE_SMELL
-Fsquid:S1220""Move this file to a named package.HRMINORZ
+tsquid:UselessImportCheck".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ8—Ìµó,HÿRMINORZ
+CODE_SMELL
+„squid:CommentedOutCodeLine?"<This block of commented-out lines of code should be removed.(û·„—øÿÿÿÿ8åÂèµó,H³RMAJORZ
+CODE_SMELL
+„squid:CommentedOutCodeLineI"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ8åÂèµó,H´RMAJORZ
+CODE_SMELL
+q
+squid:S1061"9Replace this use of System.out or System.err by a logger.(ªÇ¥Íüÿÿÿÿ8´¾Éñ,HåRMAJORZ
+CODE_SMELL
+`squid:S14819"'Remove this unused "in" local variable.(é»§Êûÿÿÿÿ8åÂèµó,H¶RMINORZ
+CODE_SMELL
+^squid:S00108A")Either remove or fill this block of code.(”ı¾8üêÎµó,H²RMAJORZ
+CODE_SMELL
+ysquid:S2095"JUse try-with-resources or close this "ServerSocket" in a "finally" clause.(ñ„Ì¶8—Ìµó,HúRBLOCKERZBUG
+osquid:S18549"6Remove this useless assignment to local variable "in".(é»§Êûÿÿÿÿ8åÂèµó,H¸RMAJORZ
+CODE_SMELL
+Gsquid:S1220""Move this file to a named package.HäRMINORZ
+CODE_SMELL
+rsquid:S2134
+"@Don't extend "Thread", since the "run" method is not overridden.(Ÿ¥ıÇıÿÿÿÿ8»—§µó,HõRMAJORZBUG
+„squid:CommentedOutCodeLine!"<This block of commented-out lines of code should be removed.(ŸÑ…¦üÿÿÿÿ8—Ìµó,HüRMAJORZ
+CODE_SMELL
+nsquid:S1141;"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8åÂèµó,HµRMAJORZ
+CODE_SMELL
+nsquid:S11617":Add the "@Override" annotation above this method signature(“–ış8—Ìµó,HRMAJORZ
+CODE_SMELL
+squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÅñÈ÷8—Ìµó,HûRMAJORZ
+CODE_SMELL
+_squid:S1148$"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8’÷Ñµó,HŠRMINORZVULNERABILITY
+Vsquid:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8—Ìµó,HùRBLOCKERZBUG
+^squid:S00108D")Either remove or fill this block of code.(ï­£Ä8åÂèµó,H·RMAJORZ
+CODE_SMELL
+¿%squid:RedundantThrowsDeclarationCheck"qRemove the declaration of thrown exception 'java.net.SocketException', as it cannot be thrown from method's body.(”Ò 8Ñæîµó,H¼RMINORZ
 CODE_SMELL
