@@ -1,21 +1,19 @@
 
-[squid:S1481"'Remove this unused "in" local variable.(äÆ¾Ó8ìÖÔµó,HÓRMINORZ
+[squid:S1481"'Remove this unused "in" local variable.(äÆ¾Ó8ìÖÔµó,HúRMINORZ
 CODE_SMELL
-vsquid:S1854"=Remove this useless assignment to local variable "outStream".(›ıáŞûÿÿÿÿ8ìÖÔµó,HÔRMAJORZ
-CODE_SMELL
-„squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ôà‹ôüÿÿÿÿ8ªÒíÈñ,HÕRMAJORZ
-CODE_SMELL
-}squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ËìÛßşÿÿÿÿHÖRMAJORZ
-CODE_SMELL
-jsquid:S1854"6Remove this useless assignment to local variable "in".(äÆ¾Ó8ìÖÔµó,H×RMAJORZ
-CODE_SMELL
-Gsquid:S1220""Move this file to a named package.HØRMINORZ
+lsquid:S2095"DUse try-with-resources or close this "Socket" in a "finally" clause.(ÖİŞåHûRBLOCKERZBUG
+vsquid:S1854"=Remove this useless assignment to local variable "outStream".(›ıáŞûÿÿÿÿ8ìÖÔµó,HüRMAJORZ
 CODE_SMELL
 q
-squid:S106"9Replace this use of System.out or System.err by a logger.(¬ªĞŠşÿÿÿÿ8ªÒíÈñ,HÙRMAJORZ
+squid:S106"9Replace this use of System.out or System.err by a logger.(¬ªĞŠşÿÿÿÿ8ªÒíÈñ,HıRMAJORZ
 CODE_SMELL
-„squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Æ²˜şÿÿÿÿ8ìÖÔµó,HÚRMAJORZ
+wsquid:UselessImportCheck"6Remove this unused import 'java.io.InputStreamReader'.(ãˆÎÉ8ÏÑÆù,HşRMINORZ
 CODE_SMELL
-lsquid:S2095"DUse try-with-resources or close this "Socket" in a "finally" clause.(ÖİŞåHÛRBLOCKERZBUG
-gsquid:S1481".Remove this unused "outStream" local variable.(›ıáŞûÿÿÿÿ8ìÖÔµó,HÜRMINORZ
+tsquid:UselessImportCheck"3Remove this unused import 'java.io.BufferedReader'.(€é²Å8ÏÑÆù,HÿRMINORZ
+CODE_SMELL
+Gsquid:S1220""Move this file to a named package.H€RMINORZ
+CODE_SMELL
+jsquid:S1854"6Remove this useless assignment to local variable "in".(äÆ¾Ó8ìÖÔµó,HRMAJORZ
+CODE_SMELL
+gsquid:S1481".Remove this unused "outStream" local variable.(›ıáŞûÿÿÿÿ8ìÖÔµó,H‚RMINORZ
 CODE_SMELL

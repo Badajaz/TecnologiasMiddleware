@@ -1,57 +1,49 @@
 
-squid:CommentedOutCodeLine0"<This block of commented-out lines of code should be removed.(ÅñÈ÷8—Ìµó,HÊRMAJORZ
-CODE_SMELL
-Vsquid:S21896""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8—Ìµó,HÅRBLOCKERZBUG
-vsquid:S1854"=Remove this useless assignment to local variable "outStream".(›ıáŞûÿÿÿÿ8¢ğ¹½ó,H¡RMAJORZ
+osquid:S1854C"6Remove this useless assignment to local variable "in".(é»§Êûÿÿÿÿ8åÂèµó,HáRMAJORZ
 CODE_SMELL
 q
-squid:S106"9Replace this use of System.out or System.err by a logger.(Ç¸¾¶ûÿÿÿÿ8ßï’½ó,HôRMAJORZ
+squid:S106;"9Replace this use of System.out or System.err by a logger.(ªÇ¥Íüÿÿÿÿ8´¾Éñ,HâRMAJORZ
 CODE_SMELL
-gsquid:S1481".Remove this unused "outStream" local variable.(›ıáŞûÿÿÿÿ8¢ğ¹½ó,H RMINORZ
-CODE_SMELL
-osquid:S1854S"6Remove this useless assignment to local variable "in".(é»§Êûÿÿÿÿ8åÂèµó,H¿RMAJORZ
-CODE_SMELL
-ssquid:S2095"DUse try-with-resources or close this "Socket" in a "finally" clause.(ÖİŞå8¤«ˆ½ó,HãRBLOCKERZBUG
-„squid:CommentedOutCodeLineY"<This block of commented-out lines of code should be removed.(û·„—øÿÿÿÿ8åÂèµó,HÀRMAJORZ
+_squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8’÷Ñµó,HãRMINORZVULNERABILITY
+^squid:S00108K")Either remove or fill this block of code.(”ı¾8ºÏâ½ó,HäRMAJORZ
 CODE_SMELL
 q
-squid:S106"9Replace this use of System.out or System.err by a logger.(¸ Ş‚ÿÿÿÿÿ8´¾Éñ,HÁRMAJORZ
+squid:S106#"9Replace this use of System.out or System.err by a logger.(öØáøÿÿÿÿ8Øà½ó,HåRMAJORZ
 CODE_SMELL
 ¿%squid:RedundantThrowsDeclarationCheck
-"qRemove the declaration of thrown exception 'java.net.SocketException', as it cannot be thrown from method's body.(¢à¥ï8Ñæîµó,H¾RMINORZ
+"qRemove the declaration of thrown exception 'java.net.SocketException', as it cannot be thrown from method's body.(¢à¥ï8Ñæîµó,HæRMINORZ
+CODE_SMELL
+squid:CommentedOutCodeLine "<This block of commented-out lines of code should be removed.(ÅñÈ÷8—Ìµó,HçRMAJORZ
+CODE_SMELL
+ssquid:S2095"DUse try-with-resources or close this "Socket" in a "finally" clause.(ÖİŞå8¤«ˆ½ó,HèRBLOCKERZBUG
+_squid:S1148."#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¤«ˆ½ó,HéRMINORZVULNERABILITY
+rsquid:S2134"@Don't extend "Thread", since the "run" method is not overridden.(Ÿ¥ıÇıÿÿÿÿ8»—§µó,HêRMAJORZBUG
+nsquid:S1161A":Add the "@Override" annotation above this method signature(“–ış8—Ìµó,HëRMAJORZ
+CODE_SMELL
+gsquid:S1481".Remove this unused "outStream" local variable.(›ıáŞûÿÿÿÿ8¢ğ¹½ó,HìRMINORZ
+CODE_SMELL
+ysquid:S2095"JUse try-with-resources or close this "ServerSocket" in a "finally" clause.(ñ„Ì¶8—Ìµó,HíRBLOCKERZBUG
+„squid:CommentedOutCodeLineI"<This block of commented-out lines of code should be removed.(û·„—øÿÿÿÿ8åÂèµó,HîRMAJORZ
+CODE_SMELL
+„squid:CommentedOutCodeLine+"<This block of commented-out lines of code should be removed.(ŸÑ…¦üÿÿÿÿ8—Ìµó,HïRMAJORZ
+CODE_SMELL
+vsquid:S1854"=Remove this useless assignment to local variable "outStream".(›ıáŞûÿÿÿÿ8¢ğ¹½ó,HğRMAJORZ
+CODE_SMELL
+jsquid:S1135"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8¤«ˆ½ó,HñRINFOZ
+CODE_SMELL
+[squid:S1481"'Remove this unused "in" local variable.(äÆ¾Ó8åÂèµó,HòRMINORZ
+CODE_SMELL
+Vsquid:S2189&""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8—Ìµó,HóRBLOCKERZBUG
+Gsquid:S1220""Move this file to a named package.HôRMINORZ
+CODE_SMELL
+`squid:S1481C"'Remove this unused "in" local variable.(é»§Êûÿÿÿÿ8×öşÅù,HõRMINORZ
+CODE_SMELL
+jsquid:S1854"6Remove this useless assignment to local variable "in".(äÆ¾Ó8×öşÅù,HöRMAJORZ
 CODE_SMELL
 q
-squid:S106"9Replace this use of System.out or System.err by a logger.(¬ªĞŠşÿÿÿÿ8¢ğ¹½ó,HŸRMAJORZ
+squid:S106"9Replace this use of System.out or System.err by a logger.(¬ªĞŠşÿÿÿÿ8Øà½ó,H÷RMAJORZ
 CODE_SMELL
-rsquid:S2134"@Don't extend "Thread", since the "run" method is not overridden.(Ÿ¥ıÇıÿÿÿÿ8»—§µó,HÆRMAJORZBUG
-„squid:CommentedOutCodeLine;"<This block of commented-out lines of code should be removed.(ŸÑ…¦üÿÿÿÿ8—Ìµó,HÈRMAJORZ
+nsquid:S1141E"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8åÂèµó,HøRMAJORZ
 CODE_SMELL
-q
-squid:S106$"9Replace this use of System.out or System.err by a logger.(¾Ùï¡ÿÿÿÿÿ8—Ìµó,HÍRMAJORZ
-CODE_SMELL
-`squid:S1481S"'Remove this unused "in" local variable.(é»§Êûÿÿÿÿ8åÂèµó,HÏRMINORZ
-CODE_SMELL
-nsquid:S1141U"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8åÂèµó,HËRMAJORZ
-CODE_SMELL
-^squid:S00108[")Either remove or fill this block of code.(”ı¾8üêÎµó,H½RMAJORZ
-CODE_SMELL
-nsquid:S1161Q":Add the "@Override" annotation above this method signature(“–ış8—Ìµó,HÂRMAJORZ
-CODE_SMELL
-jsquid:S1135"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8¤«ˆ½ó,HäRINFOZ
-CODE_SMELL
-^squid:S00108^")Either remove or fill this block of code.(ï­£Ä8ºÏâ½ó,HÂRMAJORZ
-CODE_SMELL
-q
-squid:S106"9Replace this use of System.out or System.err by a logger.(ñ˜Ì½üÿÿÿÿ8Øà½ó,H¶RMAJORZ
-CODE_SMELL
-ysquid:S2095."JUse try-with-resources or close this "ServerSocket" in a "finally" clause.(ñ„Ì¶8—Ìµó,HÌRBLOCKERZBUG
-_squid:S1148>"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¤«ˆ½ó,HçRMINORZVULNERABILITY
-q
-squid:S1063"9Replace this use of System.out or System.err by a logger.(öØáøÿÿÿÿ8ş¡ò½ó,HáRMAJORZ
-CODE_SMELL
-q
-squid:S106K"9Replace this use of System.out or System.err by a logger.(ªÇ¥Íüÿÿÿÿ8Øà½ó,H·RMAJORZ
-CODE_SMELL
-_squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8’÷Ñµó,HÄRMINORZVULNERABILITY
-Gsquid:S1220""Move this file to a named package.HÉRMINORZ
+^squid:S00108N")Either remove or fill this block of code.(ï­£Ä8üêÎµó,HùRMAJORZ
 CODE_SMELL
