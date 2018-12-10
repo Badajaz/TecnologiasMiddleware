@@ -9,18 +9,7 @@ public class Peer extends Thread {
 
 	public static void main(String[] args) throws java.net.SocketException, ClassNotFoundException{
 		Scanner in = new Scanner(System.in);
-		System.out.println("user?");
-		String user = in.nextLine();
-		System.out.println("password?");
-		String password = in.nextLine();
-		
-		
-		if (user.equals("goncalo") && password.equals("1234")) {
-			
-		
-		System.out.println("SERVER OR USER? 1/2");
-		int check = in.nextInt();
-		if (check == 1) {	
+	
 		try {
 			Socket s = new Socket("localhost", 23232);
 			ObjectOutputStream outStream = new ObjectOutputStream(s.getOutputStream());
@@ -30,17 +19,10 @@ public class Peer extends Thread {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	}else {
-		Peer peer = new Peer();
-		peer.startServer();
 	}
-}else {
-	System.out.println("Dados errados");
-}
-		
 
 
-	}
+	
 
 	public void startServer (){
 		ServerSocket sSoc = null;

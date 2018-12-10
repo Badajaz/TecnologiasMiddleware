@@ -9,27 +9,19 @@ import java.util.Scanner;
 
 public class PeerDois {
 
-	
-	
+
+
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 		Scanner in = new Scanner(System.in);
-		
-			Socket s = new Socket("localhost", 23232);
-			//BufferedReader input =new BufferedReader(new InputStreamReader(s.getInputStream()));
-			//String answer = input.readLine();
-			
-			ObjectOutputStream outStream = new ObjectOutputStream(s.getOutputStream());
-			ObjectInputStream inStream = new ObjectInputStream(s.getInputStream());
-			System.out.println(inStream.readObject());
-			//System.out.println("INTRODUZA O NOME DO FICHEIRO");
-			//String pesquisa = in.nextLine();
-			//outStream.writeObject(pesquisa);
-			
-			
-			//s.setKeepAlive(true);
-		
-			
-		
+
+		Socket s = new Socket("localhost", 23232);
+
+		ObjectOutputStream outStream = new ObjectOutputStream(s.getOutputStream());
+		ObjectInputStream inStream = new ObjectInputStream(s.getInputStream());
+		System.out.println(inStream.readObject());
+
+
+
 
 	}
 }
