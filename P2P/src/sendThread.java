@@ -11,34 +11,34 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.UUID;
+import java.util.concurrent.BlockingQueue;
 
 public class sendThread extends Thread{
 
-	private Scanner in; 
-	private int port;
 	private ArrayList<String> subscricoes;
 	private Map<String,Integer> peers;
+	private BlockingQueue<SendData> queue;
 
-	public sendThread(String port) throws IOException {
-		in = new Scanner(System.in);
-		this.port = Integer.parseInt(port);
+	public sendThread(BlockingQueue<SendData> queue) throws IOException {
 		subscricoes = new ArrayList<>();
 		peers = new HashMap<String, Integer> ();
+		this.queue = queue;
 	}
 
 
 	public void run() {
+		
 		System.out.println("Faça as suas subscrições");
 		while(true) {
 			String ms = "";
-			if(!(ms = in.nextLine()).equals("")) {
+			if ( (queue.peek() != null ) && (queue.peek().getEvento() != null)) {
+				
 				try {
-					String[] splitsubs = ms.split(" ");
+					String[] splitsubs;
+
+					splitsubs = queue.take().getEvento().split(" ");
+
 					switch(splitsubs[0]) {
-					case "subscribe":
-						//subscribe futebol cinema politica
-						addsubs(splitsubs);
-						break;
 
 					case "publish":
 						//publish ficheiro(path+nomeficheiro) tema
@@ -59,7 +59,7 @@ public class sendThread extends Thread{
 							//evento publish
 							out.writeObject(1);
 							out.writeObject(UUID.randomUUID());
-
+							out.writeObject(splitsubs[1]);
 							out.writeObject(splitsubs[2]);
 							out.writeObject(temp);
 
@@ -75,13 +75,6 @@ public class sendThread extends Thread{
 							out.close();
 							socket.close();
 
-
-
-
-
-
-
-
 						}
 
 
@@ -94,7 +87,12 @@ public class sendThread extends Thread{
 						peers.put(splitsubs[1], Integer.parseInt(splitsubs[2]));
 						break;
 					}
-				} catch (UnknownHostException e) {
+
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				catch (UnknownHostException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				} catch (IOException e) {
@@ -103,17 +101,12 @@ public class sendThread extends Thread{
 				}
 			}
 
-
-		}
-	}
-
-	public void addsubs(String[] splitsubs) {
-		for(int i = 1;i< splitsubs.length;i++) {
-			subscricoes.add(splitsubs[i]);
 		}
 
 
+
 	}
+
 
 
 }

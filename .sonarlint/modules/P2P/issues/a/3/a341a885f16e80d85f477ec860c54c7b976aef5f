@@ -1,0 +1,22 @@
+
+Gsquid:S1220""Move this file to a named package.HÈRMINORZ
+CODE_SMELL
+€squid:S00101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(­™ÀøÿÿÿÿÿHÍRMINORZ
+CODE_SMELL
+}squid:S2095"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(È¾´8ÁÍıÒù,Hó	RBLOCKERZBUG
+u"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(¯Ä©üÿÿÿÿ8ş¦²Òù,H†	RCRITICALZ
+CODE_SMELL
+nsquid:S1161":Add the "@Override" annotation above this method signature(“–ış8ó°·Íù,HÕRMAJORZ
+CODE_SMELL
+„squid:S1301"KReplace this "switch" statement by "if" statements to increase readability.(¯Ä©üÿÿÿÿ8ş¦²Òù,H‡	RMINORZ
+CODE_SMELL
+jsquid:S11357"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8°õ‚Óù,Hô	RINFOZ
+CODE_SMELL
+jsquid:S1135:"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8°õ‚Óù,Hõ	RINFOZ
+CODE_SMELL
+‰squid:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(“–ış8°õ‚Óù,Hö	RCRITICALZ
+CODE_SMELL
+xsquid:S21479"DCombine this catch with the one at line 54, which has the same body.(ıàÑÎ8°õ‚Óù,H÷	RMINORZ
+CODE_SMELL
+_squid:S11488"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8°õ‚Óù,Hø	RMINORZVULNERABILITY
+_squid:S1148;"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8°õ‚Óù,Hù	RMINORZVULNERABILITY
