@@ -1,36 +1,47 @@
 
-jsquid:S1135b"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8ÙÛ´Íù,HÂRINFOZ
+€squid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ó¼ÈÿÿÿÿÿH”RMINORZ
 CODE_SMELL
-|squid:S20956"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(´Ö‰š8öê—Òù,H	RBLOCKERZBUG
-jsquid:S1135e"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8ÙÛ´Íù,HÁRINFOZ
+ssquid:S2142["FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8‰İ…€ú,H•RMAJORZBUG
+squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÁÒ…®8Â®¦Óù,H–RMINORZ
 CODE_SMELL
-‰squid:S3776"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(“–ış8£æ×Ñù,HÚRCRITICALZ
-CODE_SMELL
-usquid:UselessImportCheck"5Remove this unused import 'java.io.FileOutputStream'.(˜«ªg8÷ê—Òù,HêRMINORZ
-CODE_SMELL
-asquid:S1068"(Remove this unused "port" private field.(ß³†ÿÿÿÿÿ8àµÜÒù,H§	RMAJORZ
-CODE_SMELL
-Gsquid:S1220""Move this file to a named package.HºRMINORZ
+xsquid:S20954"DUse try-with-resources or close this "Socket" in a "finally" clause.(âÃ×‡üÿÿÿÿ8àµÜÒù,H—RBLOCKERZBUG
+nsquid:S1161":Add the "@Override" annotation above this method signature(“–ış8ÙÛ´Íù,H˜RMAJORZ
 CODE_SMELL
 l
-squid:S106"9Replace this use of System.out or System.err by a logger.(ï­€¬8†ğáÒù,HÅ	RMAJORZ
-CODE_SMELL
-nsquid:S1161":Add the "@Override" annotation above this method signature(“–ış8ÙÛ´Íù,HÆRMAJORZ
-CODE_SMELL
-€squid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ó¼ÈÿÿÿÿÿH¾RMINORZ
+squid:S106"9Replace this use of System.out or System.err by a logger.(ï­€¬8¼ûÇĞù,H™RMAJORZ
 CODE_SMELL
 q
-squid:S1062"9Replace this use of System.out or System.err by a logger.(şİùşÿÿÿÿ8¼ûÇĞù,H´RMAJORZ
+squid:S1062"9Replace this use of System.out or System.err by a logger.(şİùşÿÿÿÿ8†ğáÒù,HšRMAJORZ
 CODE_SMELL
-_squid:S1148f"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÙÛ´Íù,HÅRMINORZVULNERABILITY
-xsquid:S2147d"DCombine this catch with the one at line 97, which has the same body.(ï­£Ä8ÙÛ´Íù,HÃRMINORZ
+p"squid:SwitchLastCaseIsDefaultCheck)""Add a default case to this switch.(œÌ‡Ê8£ÓĞù,H›RCRITICALZ
 CODE_SMELL
-xsquid:S20954"DUse try-with-resources or close this "Socket" in a "finally" clause.(âÃ×‡üÿÿÿÿ8àµÜÒù,H¨	RBLOCKERZBUG
-_squid:S1148c"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÙÛ´Íù,HÄRMINORZVULNERABILITY
-{$squid:AssignmentInSubExpressionCheck"".Extract the assignment out of this expression.(©Ä©é8µ…şÍù,H©RMAJORZ
+jsquid:S1135\"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8ÙÛ´Íù,HœRINFOZ
 CODE_SMELL
-p"squid:SwitchLastCaseIsDefaultCheck%""Add a default case to this switch.(œÌ‡Ê8£ÓĞù,H¸RCRITICALZ
+Gsquid:S1220""Move this file to a named package.HRMINORZ
 CODE_SMELL
-squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÁÒ…®8Â®¦Óù,H
-RMINORZ
+}squid:S2147_"DCombine this catch with the one at line 91, which has the same body.(¿Â„ÿÿÿÿÿ8ê’€ú,HRMINORZ
+CODE_SMELL
+_squid:S1148a"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8‰İ…€ú,HŸRMINORZVULNERABILITY
+‰squid:S3776"RRefactor this method to reduce its Cognitive Complexity from 31 to the 15 allowed.(“–ış8£æ×Ñù,H RCRITICALZ
+CODE_SMELL
+_squid:S1148]"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÙÛ´Íù,H¡RMINORZVULNERABILITY
+jsquid:S1135c"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8ÙÛ´Íù,H¢RINFOZ
+CODE_SMELL
+csquid:S1068"/Remove this unused "subscricoes" private field.(‚ÍÜ8ÇÄó€ú,H£RMAJORZ
+CODE_SMELL
+`squid:S1481!"'Remove this unused "ms" local variable.(‡Ü¨¼ÿÿÿÿÿ8‰İ…€ú,H¤RMINORZ
+CODE_SMELL
+jsquid:S1135`"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8‰İ…€ú,H¥RINFOZ
+CODE_SMELL
+¿%squid:RedundantThrowsDeclarationCheck"qRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from constructor's body.(Æ²ŞÄ8³†¬ÿù,H¦RMINORZ
+CODE_SMELL
+xsquid:S2147b"DCombine this catch with the one at line 91, which has the same body.(ï­£Ä8ÙÛ´Íù,H§RMINORZ
+CODE_SMELL
+|squid:S20956"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(´Ö‰š8öê—Òù,H¨RBLOCKERZBUG
+_squid:S1148d"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÙÛ´Íù,H©RMINORZVULNERABILITY
+tsquid:UselessImportCheck".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ8œ˜ùÿù,HªRMINORZ
+CODE_SMELL
+usquid:UselessImportCheck"5Remove this unused import 'java.io.FileOutputStream'.(˜«ªg8÷ê—Òù,H«RMINORZ
+CODE_SMELL
+squid:S1301)"KReplace this "switch" statement by "if" statements to increase readability.(œÌ‡Ê8ÇÄó€ú,H¬RMINORZ
 CODE_SMELL

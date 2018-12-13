@@ -10,7 +10,7 @@ public class P2P {
 
 		try {
 			BlockingQueue<SendData> queue = new LinkedBlockingQueue<SendData>();
-			BlockingQueue<SendData> subscricoes = new LinkedBlockingQueue<SendData>();
+			BlockingQueue<String> subscricoes = new LinkedBlockingQueue<String>();
 			new receiveThread(args[0],queue,subscricoes).start();
 			new sendThread(queue).start();
 			while(true) {
@@ -20,7 +20,7 @@ public class P2P {
 						break;
 						
 					}else if(ms.split(" ")[0].equals("subscribe")){
-						subscricoes.add(new SendData(ms.split(" ")));
+						subscricoes.add(ms.split(" ")[1]);
 					}else {
 						queue.add(new SendData(ms));
 					}

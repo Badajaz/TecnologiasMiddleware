@@ -14,33 +14,28 @@ public class receiveThread extends Thread{
 	private ServerSocket serverSocket;
 	private ArrayList<UUID> arrayNumber;
 	private BlockingQueue<SendData> queue;
-	private BlockingQueue<SendData> filaSubscricoes;
-	private List<String> listaSubscricoes;
+	private BlockingQueue<String> filaSubscricoes;
+	
 
 
-	public receiveThread(String sock, BlockingQueue<SendData> queue,BlockingQueue<SendData> subscricoes) throws NumberFormatException, IOException {
+	public receiveThread(String sock, BlockingQueue<SendData> queue,BlockingQueue<String> subscricoes) throws NumberFormatException, IOException {
 		serverSocket = new ServerSocket(Integer.parseInt(sock));
 		arrayNumber = new ArrayList<>();
 		this.queue=queue;
 		this.filaSubscricoes = subscricoes;
-		this.listaSubscricoes = new ArrayList<>();
+
 	}
 
 	public void run() {
 		while(true) {
-			if (filaSubscricoes.isEmpty()) {
-				try {
-					listaSubscricoes.addAll(filaSubscricoes.take().getSubs());
-				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-			}
+				
 			try {
+			
+				
 				Socket server = serverSocket.accept();
 				ObjectInputStream in = new ObjectInputStream(server.getInputStream());
 
-
+				System.out.println("Linha 38");
 				switch((int)in.readObject()) {
 				case 1:
 					UUID number = (UUID) in.readObject();
@@ -48,6 +43,7 @@ public class receiveThread extends Thread{
 						String ficheiro = (String)in.readObject();
 						String tema = (String)in.readObject();
 						int tamanhoFicheiro = (int)in.readObject();
+						System.out.println("Linha 54");
 						FileOutputStream fos = new FileOutputStream(ficheiro);
 						int count;
 						int temp = tamanhoFicheiro;
@@ -59,15 +55,19 @@ public class receiveThread extends Thread{
 						}
 						
 						SendData sd = new SendData(ficheiro, tamanhoFicheiro, new File(ficheiro), number, tema);
-						
-						if (listaSubscricoes.contains(tema)) {
+						System.out.println("Linha 66");
+						System.out.println(filaSubscricoes+" "+tema);
+						if (filaSubscricoes.contains(tema)) {
 							System.out.println("Recebi uma susbscrição de "+tema+" nome do ficheiro "+ficheiro);
 						}
 						queue.add(sd);
 						arrayNumber.add(number);
+						System.out.println("Linha 72");
+						
 
 						fos.close();
 						in.close();
+						server.close();
 					}
 
 					break;

@@ -1,22 +1,39 @@
 
-Gsquid:S1220""Move this file to a named package.HÈRMINORZ
+½%squid:RedundantThrowsDeclarationCheck"jRemove the declaration of thrown exception 'java.lang.NumberFormatException' which is a runtime exception.(’¤™øüÿÿÿÿ8˜©ÿù,H‹RMINORZ
 CODE_SMELL
-€squid:S00101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(­™ÀøÿÿÿÿÿHÍRMINORZ
+‰squid:S3776"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(“–ış8°õ‚Óù,H†RCRITICALZ
 CODE_SMELL
-}squid:S2095"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(È¾´8ÁÍıÒù,Hó	RBLOCKERZBUG
-u"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(¯Ä©üÿÿÿÿ8ş¦²Òù,H†	RCRITICALZ
+_squid:S1148X"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8°õ‚Óù,HşRMINORZVULNERABILITY
+xsquid:S2147V"DCombine this catch with the one at line 83, which has the same body.(ıàÑÎ8°õ‚Óù,H‡RMINORZ
 CODE_SMELL
-nsquid:S1161":Add the "@Override" annotation above this method signature(“–ış8ó°·Íù,HÕRMAJORZ
+}squid:S20956"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(È¾´8ÁÍıÒù,H…RBLOCKERZBUG
+q
+squid:S106)"9Replace this use of System.out or System.err by a logger.(Ã¨ğûÿÿÿÿ8‡ı—ú,HRMAJORZ
 CODE_SMELL
-„squid:S1301"KReplace this "switch" statement by "if" statements to increase readability.(¯Ä©üÿÿÿÿ8ş¦²Òù,H‡	RMINORZ
+q
+squid:S106C"9Replace this use of System.out or System.err by a logger.(Â›´ïüÿÿÿÿ8Éıë–ú,HµRMAJORZ
 CODE_SMELL
-jsquid:S11357"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8°õ‚Óù,Hô	RINFOZ
+Gsquid:S1220""Move this file to a named package.H‰RMINORZ
 CODE_SMELL
-jsquid:S1135:"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8°õ‚Óù,Hõ	RINFOZ
+€squid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(­™ÀøÿÿÿÿÿHÿRMINORZ
 CODE_SMELL
-‰squid:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(“–ış8°õ‚Óù,Hö	RCRITICALZ
+„squid:S1301/"KReplace this "switch" statement by "if" statements to increase readability.(¯Ä©üÿÿÿÿ8ş¦²Òù,HıRMINORZ
 CODE_SMELL
-xsquid:S21479"DCombine this catch with the one at line 54, which has the same body.(ıàÑÎ8°õ‚Óù,H÷	RMINORZ
+_squid:S1148U"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ØĞ•ú,HˆRMINORZVULNERABILITY
+‹squid:UselessImportCheck"ERemove this unused import 'java.util.concurrent.LinkedBlockingQueue'.(ŸØšüÿÿÿÿ8¢¯ÿù,HŠRMINORZ
 CODE_SMELL
-_squid:S11488"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8°õ‚Óù,Hø	RMINORZVULNERABILITY
-_squid:S1148;"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8°õ‚Óù,Hù	RMINORZVULNERABILITY
+nsquid:S1161":Add the "@Override" annotation above this method signature(“–ış8ó°·Íù,HƒRMAJORZ
+CODE_SMELL
+ssquid:S2142#"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8ØĞ•ú,H‚RMAJORZBUG
+jsquid:S1135W"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8°õ‚Óù,HRINFOZ
+CODE_SMELL
+_squid:S1148%"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8°õ‚Óù,HRMINORZVULNERABILITY
+u"squid:SwitchLastCaseIsDefaultCheck/""Add a default case to this switch.(¯Ä©üÿÿÿÿ8ş¦²Òù,H€RCRITICALZ
+CODE_SMELL
+jsquid:S1135$"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8°õ‚Óù,HŒRINFOZ
+CODE_SMELL
+jsquid:S1135T"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8ØĞ•ú,H„RINFOZ
+CODE_SMELL
+l
+squid:S106!"9Replace this use of System.out or System.err by a logger.(™©©“8ŞŒ¼˜ú,HºRMAJORZ
+CODE_SMELL

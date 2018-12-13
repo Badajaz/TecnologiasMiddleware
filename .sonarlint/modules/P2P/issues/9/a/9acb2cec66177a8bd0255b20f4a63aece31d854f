@@ -1,7 +1,16 @@
 
-Xsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHõRMINORZVULNERABILITY
-csquid:S1135
-"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿHéRINFOZ
+’squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ù¨ìûüÿÿÿÿ8ŸÊÑ€ú,HÁRMINORZ
 CODE_SMELL
-Gsquid:S1220""Move this file to a named package.HëRMINORZ
+Gsquid:S1220""Move this file to a named package.H
+RMINORZ
+CODE_SMELL
+csquid:S1135 "2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿH
+RINFOZ
+CODE_SMELL
+Xsquid:S1148!"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH
+RMINORZVULNERABILITY
+{$squid:AssignmentInSubExpressionCheck".Extract the assignment out of this expression.(©Ä©é8µ¨áÿù,H…RMAJORZ
+CODE_SMELL
+’squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(æ—›–úÿÿÿÿ8ß¨ÿù,H™
+RMINORZ
 CODE_SMELL
