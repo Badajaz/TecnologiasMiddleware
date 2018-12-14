@@ -1,16 +1,12 @@
 
-’squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ù¨ìûüÿÿÿÿ8ŸÊÑ€ú,HÁRMINORZ
+{$squid:AssignmentInSubExpressionCheck".Extract the assignment out of this expression.(©Ä©é8µ¨áÿù,H½RMAJORZ
 CODE_SMELL
-Gsquid:S1220""Move this file to a named package.H
-RMINORZ
+’squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(æ—›–úÿÿÿÿ8ß¨ÿù,H¾RMINORZ
 CODE_SMELL
-csquid:S1135 "2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿH
-RINFOZ
+Xsquid:S1148!"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH¼RMINORZVULNERABILITY
+csquid:S1135 "2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿH»RINFOZ
 CODE_SMELL
-Xsquid:S1148!"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH
-RMINORZVULNERABILITY
-{$squid:AssignmentInSubExpressionCheck".Extract the assignment out of this expression.(©Ä©é8µ¨áÿù,H…RMAJORZ
+’squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(‹ëüÈşÿÿÿÿ8ŸÊÑ€ú,HÀRMINORZ
 CODE_SMELL
-’squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(æ—›–úÿÿÿÿ8ß¨ÿù,H™
-RMINORZ
+Gsquid:S1220""Move this file to a named package.H¿RMINORZ
 CODE_SMELL

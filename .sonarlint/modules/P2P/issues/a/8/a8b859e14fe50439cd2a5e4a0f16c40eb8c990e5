@@ -1,0 +1,12 @@
+
+{squid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(µ²üßHRMINORZ
+CODE_SMELL
+Gsquid:S1220""Move this file to a named package.HRMINORZ
+CODE_SMELL
+nsquid:S1161
+":Add the "@Override" annotation above this method signature(“–ış8úİ§ú,H“RMAJORZ
+CODE_SMELL
+½squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(«û ıÿÿÿÿ8úİ§ú,H’RCRITICALZ
+CODE_SMELL
+csquid:S00108")Either remove or fill this block of code.(˜ïˆÿÿÿÿÿ8·é§ú,H²RMAJORZ
+CODE_SMELL

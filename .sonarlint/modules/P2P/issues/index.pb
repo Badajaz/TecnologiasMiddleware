@@ -11,3 +11,5 @@ C
 src/sendThread.java,7/c/7c9a5a6a1b31e633d68271026fe0752862049d1c
 A
 src/SendData.java,5/e/5e884b4dea5f182b3ded121bcd403fb92f7944c2
+J
+src/subscricoesThread.java,a/8/a8b859e14fe50439cd2a5e4a0f16c40eb8c990e5
