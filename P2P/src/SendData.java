@@ -9,6 +9,11 @@ import java.util.UUID;
  */
 public class SendData {
 
+	@Override
+	public String toString() {
+		return "SendData [evento=" + evento + "]";
+	}
+
 	private String ficheiro;
 	private int tamanhoFicheiro;
 	private File file;

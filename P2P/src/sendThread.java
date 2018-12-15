@@ -1,6 +1,5 @@
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
@@ -9,7 +8,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-import java.util.Scanner;
+import java.util.Map.Entry;
 import java.util.UUID;
 import java.util.concurrent.BlockingQueue;
 
@@ -28,7 +27,9 @@ public class sendThread extends Thread{
 
 	public void run() {
 		
-		System.out.println("Faça as suas subscrições");
+		System.out.println("Faça as suas subscrições | publish <ficheiro> <tema> "
+				+ " | subscribe <tema> | addPeer <IP> <Porto>");
+		
 		while(true) {
 			String ms = "";
 			if ( (queue.peek() != null ) && (queue.peek().getEvento() != null)) {
@@ -36,17 +37,34 @@ public class sendThread extends Thread{
 				try {
 					String[] splitsubs;
 
-					splitsubs = queue.take().getEvento().split(" ");
+					SendData sd = queue.take();
+					splitsubs = sd.getEvento().split(" ");
 
 					switch(splitsubs[0]) {
 
 					case "publish":
 						//publish ficheiro(path+nomeficheiro) tema
+						
+						// ver se o tema da mensagem esta subscrito
+						UUID uid;
+						String tema;
+						if(splitsubs.length == 5) {
+							
+							if(subscricoes.contains(splitsubs[4]))
+								System.out.println("Recebi uma subscricao do tema " + 
+									splitsubs[4] + " com o ficheiro " + splitsubs[1]);
+							tema = splitsubs[4];
+							uid = UUID.fromString(splitsubs[3]);
+							
+						} else {
+							uid = UUID.randomUUID();
+							tema = splitsubs[2];
+						}
 
-						Iterator it = peers.entrySet().iterator();
+						Iterator<Entry<String, Integer>> it = peers.entrySet().iterator();
 						while (it.hasNext()) {
 
-							Map.Entry pair = (Map.Entry)it.next();
+							Map.Entry<String, Integer> pair = (Map.Entry<String, Integer>)it.next();
 							System.out.println("a enviar ficheiro para vizinho "+(String)pair.getKey()+"...");
 
 							Socket socket = new Socket((String)pair.getKey(),(int)pair.getValue());
@@ -58,9 +76,9 @@ public class sendThread extends Thread{
 							int temp = (int) file.length();
 							//evento publish
 							out.writeObject(1);
-							out.writeObject(UUID.randomUUID());
+							out.writeObject(uid);
 							out.writeObject(splitsubs[1]);
-							out.writeObject(splitsubs[2]);
+							out.writeObject(tema);
 							out.writeObject(temp);
 
 							byte[] buffer = new byte[1024];
@@ -69,30 +87,39 @@ public class sendThread extends Thread{
 								temp -= count;
 								out.flush();
 							}
-							it.remove(); 
-
+							
 							fis.close();
 							out.close();
 							socket.close();
 
 						}
 
-
-
 						//publish ficheiro tema
+						break;
+						
+					case "subscribe":
+						subscricoes.add(splitsubs[1]);
+						System.out.println("Adicionei uma nova subscricao, subscricoes atuais sao " +
+								subscricoes);
+
 						break;
 
 					case "addPeer":
 						//addPeer Ip porto
+						if(splitsubs.length != 3) {
+							System.out.println("Faltam argumentos!");
+							break;
+						}
+						
 						peers.put(splitsubs[1], Integer.parseInt(splitsubs[2]));
+						System.out.println("Adicionei um novo vizinho, peers atuais sao " + peers);
 						break;
 					}
 
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
-				}
-				catch (UnknownHostException e) {
+				} catch (UnknownHostException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				} catch (IOException e) {
