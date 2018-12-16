@@ -9,7 +9,17 @@ public class P2P {
 		Scanner in = new Scanner(System.in);
 		
 		try {
-			BlockingQueue<SendData> queue = new LinkedBlockingQueue<SendData>();
+			if(args[2] == null || args[3] == null){
+				System.out.prtintln("por favor inicie o program fornecendo user e password");
+				break;
+			}
+			string user = args[2];
+			String password = args[3];
+			if(verificaLogin(user, password)){
+				BlockingQueue<SendData> queue = new LinkedBlockingQueue<SendData>();
+			} else {
+				system.out.prtintln("Novo ultilizador, as suas credenciais serão adicionadas. Para confirmar carregue 1");
+			}
 			new receiveThread(args[0],queue).start();
 			new sendThread(queue).start();
 			while(true) {
@@ -22,6 +32,7 @@ public class P2P {
 				}
 			}
 
+		
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -30,6 +41,9 @@ public class P2P {
 
 	}
 
-
+	private boolean verificaLogin(string user, string password){
+		//TODO
+		return false;
+	}
 
 }
